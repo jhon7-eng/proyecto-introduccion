@@ -1,1 +1,180 @@
 # proyecto-introduccion
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage{float}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{setspace}
+\definecolor{dorado}{RGB}{250,243,209}
+\pagestyle{empty}
+\begin{document}
+	\begin{titlepage}
+		\begin{tikzpicture}[remember picture,overlay]
+			\fill[dorado] (current page.north east)
+			rectangle ([xshift=-2.5cm]current page.south east);
+		\end{tikzpicture}
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{center}
+			{\Large\bfseries UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS}\\[0.2cm]
+			{\large Facultad de Ingeniería de Sistemas e Informática}\\[0.2cm]
+			\vspace{1.2cm}
+			\includegraphics[width=0.33\textwidth]{figuras/logo1}\\
+			\vspace{2cm}
+			{\Huge\bfseries SOFTWARE Y HARDWARE LIBRE}
+			\vspace{1cm}
+		\end{center}
+		\begin{flushleft}
+			\textbf{Curso:} Introducción a la Computación\\
+			\vspace{0.3cm}
+			\textbf{Docente:} \\
+			Uscuchagua Flores Gelber Christian
+			\vspace{0.5cm} \\
+			\textbf{Integrantes:}\\
+			\begin{itemize}
+				\item Ruiz Riva Jhon Aldair
+				\item Cabezas Zavala Jorge Luis
+				\item Cueva Sulca Alexander
+				\item Orozco Galarreta Arian David
+			\end{itemize}
+		\end{flushleft}
+		\vfill
+		\begin{center}
+			Lima -- Perú\\
+			2026
+		\end{center}
+	\end{titlepage}
+	\newpage
+	
+	\tableofcontents
+	
+	\newpage
+	
+	\section*{Introducción}
+	\addcontentsline{toc}{section}{Introducción}
+	
+	\section*{Desarrollo}
+	\addcontentsline{toc}{section}{Desarrollo}
+	
+	\section{Fundamentos del software y hardware libre}
+	\subsection{Software libre}
+	\subsection{Hardware libre}
+	\subsection{Diferencias con el modelo propietario}
+	\subsection{Ventajas y desventajas}
+	
+	\section{Evolución y organizaciones promotoras}
+	\subsection{Evolución histórica}
+	\subsection{Proyecto GNU y Linux}
+	\subsection{Organizaciones y fundaciones}
+	
+	\section{Licencias y marco legal}
+	\subsection{Importancia de las licencias}
+	\subsection{Licencias de software libre}
+	\subsection{Licencias de hardware libre}
+	
+	\section{Tecnologías y plataformas libres}
+	\subsection{Software libre más utilizado}
+	\subsection{Hardware libre más utilizado}
+	\subsection{Arduino como plataforma de hardware libre}
+	
+	\section{Comparación entre tecnologías libres y propietarias}
+	\subsection{Comparación entre software libre y software propietario}
+	
+	El software libre y el software propietario presentan diferencias fundamentales relacionadas con el acceso al código fuente, las libertades de uso y el modelo de desarrollo. El software libre permite a los usuarios ejecutar, estudiar, modificar y redistribuir el programa según sus necesidades, debido a que su código fuente se encuentra disponible para la comunidad. En cambio, el software propietario mantiene el código cerrado y limita las modificaciones, distribución o adaptación del programa únicamente a la empresa desarrolladora o a usuarios autorizados mediante licencias específicas.
+	
+	Esta diferencia influye en diversos aspectos como el costo, la personalización, la seguridad, la privacidad y la independencia tecnológica. El software libre favorece la transparencia, ya que cualquier desarrollador puede analizar el funcionamiento del programa, detectar errores y proponer mejoras. Según la Free Software Foundation (2024) y la Open Source Initiative (2024), la disponibilidad del código fuente impulsa la colaboración entre comunidades de desarrollo y permite la creación de soluciones tecnológicas más flexibles e innovadoras.
+	
+	Entre los ejemplos más representativos de software libre se encuentran GNU/Linux, LibreOffice, Mozilla Firefox, GIMP y Blender, herramientas utilizadas en ámbitos educativos, científicos y profesionales. Por otro lado, Microsoft Windows, Microsoft Office, Adobe Photoshop y Autodesk Maya representan algunas de las soluciones propietarias más utilizadas en el mercado debido a su amplia compatibilidad, soporte empresarial e integración con otros productos comerciales.
+	
+	Desde el punto de vista económico, el software libre suele representar una alternativa de menor costo, ya que reduce la dependencia de licencias comerciales y permite adaptar las herramientas según los requerimientos del usuario. Además, su desarrollo colaborativo facilita la creación de nuevas funciones y la solución de problemas mediante comunidades especializadas. En contraste, el software propietario generalmente ofrece soporte técnico oficial, documentación especializada, actualizaciones gestionadas por el fabricante y garantías orientadas principalmente a entornos empresariales.
+	
+	Por ello, muchas organizaciones combinan ambos modelos según sus necesidades. Algunas instituciones utilizan software libre para reducir costos y promover la independencia tecnológica, mientras mantienen aplicaciones propietarias cuando requieren funciones avanzadas, compatibilidad específica o soporte profesional. La elección entre ambos enfoques dependerá de factores como el presupuesto, los objetivos del proyecto, el nivel de personalización requerido y las condiciones de seguridad necesarias.
+	
+	
+	\subsection{Comparación entre hardware libre y hardware propietario}
+	
+	El hardware libre y el hardware propietario presentan diferencias importantes relacionadas con el acceso a la información técnica, la modificación de los dispositivos y el modelo de desarrollo. El hardware libre permite acceder a los esquemas electrónicos, planos de diseño y especificaciones técnicas, facilitando su estudio, modificación, fabricación y adaptación según las necesidades de los usuarios. En cambio, el hardware propietario mantiene esta información protegida y limita las modificaciones al fabricante o a entidades autorizadas.
+	
+	Esta diferencia determina los ámbitos donde se utiliza cada tipo de hardware. El hardware libre es ampliamente empleado en educación, investigación y desarrollo de prototipos, debido a que permite experimentar con los dispositivos, comprender su funcionamiento interno y crear soluciones personalizadas sin depender de restricciones comerciales. Por otro lado, el hardware propietario tiene mayor presencia en aplicaciones industriales y comerciales donde se requieren certificaciones, soporte técnico especializado y altos niveles de confiabilidad.
+	
+	Entre las plataformas de hardware libre más conocidas destacan Arduino, Raspberry Pi, ESP32 y BeagleBone Black, utilizadas en proyectos de robótica, automatización, Internet de las Cosas (IoT) y sistemas embebidos. Estas plataformas cuentan con comunidades de usuarios que desarrollan documentación, librerías y proyectos colaborativos. En contraste, dispositivos propietarios como los PLC Siemens, NI myRIO y otros equipos industriales ofrecen soluciones especializadas con respaldo del fabricante, garantía y mantenimiento profesional.
+	
+	Desde el punto de vista económico, el hardware libre representa una alternativa de menor costo y mayor flexibilidad, ya que permite modificar los diseños y utilizar componentes accesibles para crear nuevos dispositivos. Además, fomenta la innovación mediante la colaboración entre estudiantes, investigadores y desarrolladores. El hardware propietario, aunque suele requerir una mayor inversión, proporciona ventajas como certificaciones, seguridad, estabilidad y soporte técnico para aplicaciones críticas en sectores como la industria, la salud y las telecomunicaciones.
+	
+	De acuerdo con la Open Source Hardware Association (2024), el acceso abierto a los diseños electrónicos contribuye al aprendizaje, la investigación y la creación de nuevas soluciones tecnológicas. Por ello, la elección entre hardware libre y propietario dependerá de factores como el presupuesto, el nivel de personalización requerido y las necesidades específicas del proyecto.
+
+	\subsection{Análisis comparativo y criterios de elección}
+	
+	La elección entre tecnologías libres y propietarias depende principalmente del tipo de proyecto, los objetivos planteados y las necesidades específicas de cada organización. Las tecnologías libres suelen ser una alternativa adecuada para universidades, centros de investigación y proyectos educativos debido a su bajo costo, acceso al código fuente, posibilidad de personalización y capacidad para fomentar el aprendizaje y la innovación. Estas características permiten que estudiantes, investigadores y desarrolladores adapten las herramientas tecnológicas según sus requerimientos y contribuyan a su mejora mediante comunidades colaborativas.
+	
+	Por otro lado, las tecnologías propietarias son frecuentemente utilizadas por empresas y organizaciones que requieren soporte técnico especializado, certificaciones oficiales, actualizaciones controladas, compatibilidad con sistemas existentes e integración con plataformas comerciales. En sectores donde la seguridad, la estabilidad y la garantía del fabricante son aspectos críticos, las soluciones propietarias pueden ofrecer ventajas importantes para asegurar el correcto funcionamiento de los sistemas tecnológicos.
+	
+	Actualmente, muchas organizaciones optan por combinar ambos modelos mediante estrategias híbridas, aprovechando las ventajas de cada alternativa. Esta combinación permite optimizar costos, aumentar la eficiencia y seleccionar la herramienta más adecuada según cada necesidad. Por ejemplo, una empresa puede utilizar GNU/Linux para administrar sus servidores debido a su estabilidad y flexibilidad, mientras emplea Microsoft Office u otras aplicaciones comerciales para tareas administrativas específicas. De igual manera, en proyectos de automatización es común utilizar plataformas como Arduino para la creación de prototipos y posteriormente implementar equipos industriales propietarios durante la etapa de producción.
+	
+	En conclusión, las tecnologías libres y propietarias no deben considerarse modelos completamente opuestos, sino alternativas que pueden complementarse dentro del desarrollo tecnológico. La decisión de utilizar una u otra dependerá de factores como el presupuesto disponible, el nivel de personalización requerido, la necesidad de soporte técnico y los objetivos del proyecto. Una correcta evaluación de estos criterios permite aprovechar las fortalezas de ambos enfoques y promover soluciones tecnológicas más eficientes, accesibles e innovadoras.
+	\begin{table}[H]
+		\centering
+		\caption{Comparación general entre tecnologías libres y propietarias}
+		\begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
+			\hline
+			\textbf{Criterio} & \textbf{Tecnologías libres} & \textbf{Tecnologías propietarias} \\ 
+			\hline
+			Código fuente & Disponible para estudio y modificación & Cerrado y controlado por el fabricante \\
+			\hline
+			Costo & Generalmente menor debido a la ausencia de licencias & Puede requerir pagos por licencias y servicios \\
+			\hline
+			Personalización & Alta capacidad de adaptación & Limitada por las condiciones del fabricante \\
+			\hline
+			Soporte técnico & Comunidad de usuarios y desarrolladores & Soporte oficial del proveedor \\
+			\hline
+			Innovación & Desarrollo colaborativo y abierto & Desarrollo controlado por una empresa \\
+			\hline
+			Ejemplos & GNU/Linux, Arduino, LibreOffice & Windows, Microsoft Office, PLC Siemens \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\section{Aplicaciones del software y hardware libre}
+	\subsection{Educación e investigación}
+	
+	El software y el hardware libre desempeñan un papel fundamental en la educación y la investigación científica debido a que facilitan el acceso al conocimiento y reducen los costos asociados a licencias de software y equipos especializados. Su filosofía de apertura permite que estudiantes, docentes e investigadores comprendan el funcionamiento interno de las herramientas tecnológicas, las adapten a sus necesidades y contribuyan a su mejora continua.
+	
+	En el ámbito educativo, sistemas operativos como GNU/Linux y aplicaciones como LibreOffice, GIMP e Inkscape son utilizados para la enseñanza de programación, diseño gráfico, ofimática y administración de sistemas. Asimismo, plataformas de hardware libre como Arduino, Raspberry Pi y micro:bit permiten desarrollar proyectos prácticos de electrónica, robótica y automatización, fortaleciendo el aprendizaje mediante la experimentación.
+	
+	En la investigación científica, el software libre favorece la transparencia y la reproducibilidad de los resultados, ya que los investigadores pueden revisar y modificar el código fuente de las herramientas empleadas. Del mismo modo, el hardware libre posibilita la construcción de instrumentos científicos personalizados a un costo considerablemente menor que los equipos comerciales, impulsando el desarrollo de nuevos proyectos de investigación. Según la UNESCO (2021), las tecnologías abiertas promueven la colaboración científica y el acceso equitativo al conocimiento.
+	\subsection{Industria, Internet de las Cosas (IoT) e inteligencia artificial}
+	
+	La industria moderna utiliza ampliamente tecnologías libres para optimizar procesos, automatizar operaciones y mejorar la eficiencia de sus sistemas. El sistema operativo Linux constituye la base de numerosos servidores industriales y plataformas de computación en la nube, mientras que herramientas como Docker, Kubernetes y PostgreSQL forman parte de la infraestructura tecnológica de empresas dedicadas a las telecomunicaciones, manufactura, comercio electrónico y servicios digitales.
+	
+	En el ámbito del Internet de las Cosas (IoT), plataformas de hardware libre como Arduino, ESP32 y Raspberry Pi permiten desarrollar dispositivos capaces de recopilar, procesar y transmitir información mediante redes de comunicación. Estas tecnologías son utilizadas en hogares inteligentes, monitoreo ambiental, sistemas de seguridad, automatización industrial y gestión eficiente de recursos, gracias a su bajo costo y facilidad de integración con sensores y actuadores.
+	
+	Por otra parte, el software libre ha impulsado el desarrollo de la inteligencia artificial (IA) mediante herramientas abiertas como TensorFlow, PyTorch y Scikit-learn, utilizadas para crear aplicaciones de aprendizaje automático, visión por computadora, procesamiento del lenguaje natural y análisis predictivo. La disponibilidad del código fuente favorece la colaboración entre investigadores y desarrolladores, acelerando la innovación tecnológica y la mejora continua de los algoritmos.
+	\subsection{Salud, agricultura y administración pública}
+	
+	Las tecnologías libres también han encontrado importantes aplicaciones en sectores estratégicos como la salud, la agricultura y la administración pública. En el ámbito sanitario, numerosos hospitales y centros de investigación emplean software libre para la gestión de historias clínicas electrónicas, administración hospitalaria y análisis de imágenes médicas. Asimismo, plataformas de hardware libre permiten desarrollar prototipos de dispositivos médicos y sistemas de monitoreo con menores costos de implementación.
+	
+	En la agricultura, el uso de Arduino y ESP32 ha facilitado la creación de sistemas inteligentes capaces de medir variables como la humedad del suelo, la temperatura y el nivel de agua, permitiendo automatizar el riego y optimizar el uso de los recursos naturales. Estas soluciones contribuyen a incrementar la productividad agrícola y reducir el consumo de agua y energía.
+	
+	En la administración pública, el software libre favorece la transformación digital mediante la reducción de costos por licencias, el fortalecimiento de la seguridad informática y la disminución de la dependencia de proveedores específicos. Además, el empleo de estándares abiertos mejora la interoperabilidad entre instituciones gubernamentales y facilita la conservación de documentos digitales a largo plazo. El acceso al código fuente también permite realizar auditorías independientes, promoviendo una mayor transparencia y confianza en los servicios públicos.
+	
+	\section{Impacto económico del software y hardware libre}
+	\subsection{Reducción de costos}
+	\subsection{Innovación y nuevos modelos de negocio}
+	\subsection{Impacto en la industria y la educación}
+	
+	\section{Retos y perspectivas futuras}
+	\subsection{Desafíos actuales}
+	\subsection{Oportunidades y tendencias futuras}
+	
+	\section*{Conclusiones}
+	\addcontentsline{toc}{section}{Conclusiones}
+	
+	\section*{Referencias bibliográficas}
+	\addcontentsline{toc}{section}{Referencias bibliográficas}
+
+
+\end{document}
