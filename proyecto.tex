@@ -149,61 +149,74 @@
 	Estas empresas no venden el software —porque la licencia libre no permite prohibir su copia gratuita—, sino el servicio alrededor del software: soporte, garantías, capacitación e instalación.
 	
 	\subsection{Licencias de software libre}
-	
-	Todas las licencias de software libre se basan en las llamadas cuatro libertades, propuestas por la Free Software Foundation: usar el programa para cualquier propósito, estudiar cómo funciona, modificarlo y compartir copias (originales o modificadas).
-	
-	Se dividen en dos grandes familias:
-	
-	Copyleft (con "efecto cadena")
-	
-	Cualquier versión modificada debe seguir siendo libre bajo la misma licencia.
-	
-	Copyleft fuerte: si utilizas código con esta licencia y luego distribuyes ese programa, todo debe quedar bajo la misma licencia. Aquí ninguna parte del software puede volverse propietaria.
-	
-	GPL (GNU General Public License)
-	
-	Otorga: libertad de usar el programa para cualquier propósito, estudiar y modificar el código fuente, distribuir copias (idénticas o modificadas) y venderlo comercialmente.
-	
-	Exige: si distribuyes una versión modificada (o cualquier programa que incorpore código GPL), debes entregar el código fuente completo y licenciar todo el programa resultante bajo GPL. También debes conservar los avisos de copyright y de licencia originales
-	.
-	Limita: no puedes convertir el programa (ni ninguna parte que lo incluya) en software propietario cerrado, ni quitarle la libertad a quien lo reciba de ti.
-	
-	Copyleft débil: aquí no todo el programa tiene que ser libre. Solo deben mantenerse libres los archivos o bibliotecas protegidos por esa licencia.
-	
-	LGPL (Lesser General Public License)
-	
-	Otorga: las mismas cuatro libertades básicas, pero aplicadas específicamente al uso de una biblioteca (un componente de código reutilizable) dentro de otros programas.
-	
-	Exige: si modificas la propia biblioteca LGPL, esas modificaciones sí deben compartirse bajo LGPL. Si solo la usas (la "enlazas") desde tu programa sin tocar su código interno, no estás obligado a liberar tu programa.
-	
-	Limita: permite que un programa propietario use la biblioteca, pero no te permite ocultar que estás usando esa biblioteca ni impedir que el usuario final pueda reemplazarla por una versión modificada.
-	
-	MPL 2.0 (Mozilla Public License)
-	
-	
-	Otorga: derecho a usar, modificar, distribuir y combinar el código con software propietario, además de una concesión explícita de derechos de patente (protección legal frente a demandas de patentes entre los propios colaboradores del proyecto).
-	
-	Exige: solo debes compartir bajo MPL los archivos concretos que modificaste del código original ("copyleft por archivo"); los archivos nuevos que agregues pueden tener otra licencia, incluso propietaria.
-	
-	Limita: no otorga derechos sobre las marcas registradas del proyecto (no puedes usar el logo o nombre "Firefox", por ejemplo, aunque uses su código), y no incluye garantía legal sobre el software.
-	
-	Permisivas (sin efecto cadena, permiten cerrar el código derivado)
-	
-	MIT
-	
-	Otorga: permiso amplio y prácticamente sin restricciones para usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y vender copias del software, incluso dentro de un producto propietario cerrado.
-	
-	Exige: únicamente que se mantenga el aviso de copyright original y el texto de la licencia en todas las copias o partes sustanciales del software.
-	
-	Limita: el software se entrega "tal cual", sin ninguna garantía; el autor no se hace responsable de los daños derivados de su uso. El autor original no es legalmente responsable.
-	
-	Apache 2.0
-	
-	Otorga: los mismos permisos amplios que MIT (usar, modificar, distribuir, vender, sublicenciar), más una concesión explícita de derechos de patente: los colaboradores ceden automáticamente los derechos de cualquier patente que posean sobre su contribución al código.
-	
-	Exige: mantener los avisos de copyright, incluir una copia de la licencia y documentar claramente los cambios significativos que se le hicieron al archivo original.
-	
-	Limita: incluye una cláusula de "represalia de patentes" — si demandas a alguien por infracción de patente relacionada con este software, pierdes automáticamente los derechos de patente que la licencia te otorgaba. Esto es justo lo que la hace atractiva para empresas grandes: reduce el riesgo de litigios.
+
+    Todas las licencias de software libre se basan en las cuatro libertades propuestas por la Free Software Foundation: usar el programa para cualquier propósito, estudiar cómo funciona, modificarlo y compartir copias, ya sean originales o modificadas.
+
+    Las licencias de software libre se clasifican en dos grandes familias: \textbf{copyleft} y \textbf{permisivas}.
+
+    \subsubsection{Copyleft fuerte}
+
+    Las licencias de copyleft fuerte obligan a que cualquier versión modificada del software continúe siendo libre y se distribuya bajo la misma licencia. De esta manera, se garantiza que ninguna parte del programa pueda convertirse en software propietario.
+
+    \smallskip
+
+    \hspace*{\parindent}$\bullet$ \textbf{GPL (GNU General Public License)}
+
+    \textbf{Otorga:} libertad para usar el programa con cualquier propósito, estudiar y modificar el código fuente, distribuir copias (idénticas o modificadas) e incluso venderlo comercialmente.
+
+    \textbf{Exige:} si distribuyes una versión modificada o un programa que incorpore código GPL, debes proporcionar el código fuente completo y licenciar todo el programa bajo GPL. Además, deben conservarse los avisos originales de copyright y de licencia.
+
+    \textbf{Limita:} no permite convertir el programa ni ninguna parte que lo incluya en software propietario, ni eliminar las libertades que reciben los usuarios.
+
+    \medskip
+
+    \subsubsection{Copyleft débil}
+
+    En el copyleft débil, únicamente los archivos o bibliotecas protegidos por la licencia deben mantenerse libres. Esto permite que el resto del programa pueda tener otra licencia, incluso propietaria.
+
+    \smallskip
+
+    \hspace*{\parindent}$\bullet$ \textbf{LGPL (Lesser General Public License)}
+
+    \textbf{Otorga:} las mismas cuatro libertades del software libre, aplicadas específicamente al uso de bibliotecas reutilizables dentro de otros programas.
+
+    \textbf{Exige:} si modificas la biblioteca LGPL, esas modificaciones deben compartirse bajo la misma licencia. Si solo enlazas la biblioteca desde tu programa sin modificarla, no es obligatorio publicar el código fuente de tu aplicación.
+
+    \textbf{Limita:} permite que programas propietarios utilicen la biblioteca, pero no permite ocultar su uso ni impedir que el usuario pueda reemplazarla por una versión modificada.
+
+    \medskip
+
+    \hspace*{\parindent}$\bullet$ \textbf{MPL 2.0 (Mozilla Public License)}
+
+    \textbf{Otorga:} derecho a usar, modificar, distribuir y combinar el código con software propietario, además de una concesión explícita de derechos de patente entre los colaboradores.
+
+    \textbf{Exige:} únicamente los archivos modificados del código original deben mantenerse bajo MPL ("copyleft por archivo"). Los archivos nuevos pueden distribuirse bajo otra licencia.
+
+    \textbf{Limita:} no concede derechos sobre las marcas registradas del proyecto (como el nombre o logotipo de Firefox) y no ofrece garantía legal sobre el software.
+
+    \subsubsection{Permisivas}
+
+    Las licencias permisivas ofrecen mayor libertad para reutilizar el código, ya que permiten incorporarlo en proyectos de software propietario sin obligación de publicar el código fuente derivado.
+
+    \smallskip
+
+    \hspace*{\parindent}$\bullet$ \textbf{MIT}
+
+    \textbf{Otorga:} permiso amplio para usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y vender copias del software, incluso dentro de productos propietarios.
+
+    \textbf{Exige:} conservar el aviso original de copyright y el texto de la licencia en todas las copias o partes sustanciales del software.
+
+    \textbf{Limita:} el software se proporciona ``tal cual'', sin ninguna garantía; el autor no es responsable de los daños ocasionados por su uso.
+
+    \medskip
+
+    \hspace*{\parindent}$\bullet$ \textbf{Apache 2.0}
+
+    \textbf{Otorga:} los mismos permisos amplios que la licencia MIT, además de una concesión explícita de derechos de patente para los colaboradores del proyecto.
+
+    \textbf{Exige:} mantener los avisos de copyright, incluir una copia de la licencia y documentar claramente los cambios significativos realizados al código original.
+
+    \textbf{Limita:} incorpora una cláusula de represalia de patentes; si un usuario demanda a otro por una patente relacionada con el software, pierde automáticamente los derechos de patente concedidos por la licencia.
 	
 	\subsection{Licencias de hardware libre}
 	
