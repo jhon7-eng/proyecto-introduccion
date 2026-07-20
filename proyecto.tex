@@ -130,23 +130,39 @@
 	\section{Licencias y marco legal}
 	\subsection{Importancia de las licencias}
 
-	Comenzamos definiendo qué es una licencia:
-	
-	Una licencia es un documento legal mediante el cual el autor establece qué pueden hacer otras personas con su obra.
+    Comenzamos definiendo qué es una licencia.
 
-	Cuando alguien crea un software o un diseño de hardware, automáticamente adquiere derechos de autor sobre esa obra, aunque no realice ningún trámite. Esto significa que, por defecto, nadie más puede copiarla, modificarla ni distribuirla sin permiso. La licencia es justamente ese permiso: el documento donde el autor establece explícitamente qué sí y qué no se puede hacer con su obra.
-	
-	Sin las licencias libres, proyectos como GNU/Linux, Arduino o Firefox no podrían existir tal como los conocemos, porque nadie tendría el derecho legal ni la posibilidad de estudiarlos, copiarlos o incluso mejorarlos.
-	
-	Cabe mencionar que "libre" no es lo mismo que "gratis". Una licencia libre define permisos (usar, estudiar, modificar, compartir), no el precio. De hecho, existen empresas que cobran por soporte técnico o instalación de software libre. Por ejemplo:
-	
-	Red Hat: Conforma parte de IBM, además contiene a su propio sistema operativo, Red Hat Enterprise Linux (RHEL) es una distribución de GNU/Linux  libre; cualquiera puede descargar su código fuente de forma gratuita. Lo que Red Hat vende no es el software en sí, sino soporte técnico, actualizaciones garantizadas, certificaciones y consultoría para empresas que necesitan que alguien responda si algo falla en un sistema crítico.
-	
-	Canonical: la empresa detrás de Ubuntu (otra distribución de Linux libre). Ubuntu se descarga gratis, pero Canonical cobra por soporte empresarial (llamado "Ubuntu Advantage" / "Ubuntu Pro") a compañías que la usan en sus servidores.
-	
-	Automattic: la empresa detrás de WordPress (el software para crear páginas web, que es software libre bajo licencia GPL). WordPress.org es gratis y libre, pero Automattic cobra por alojamiento (hosting), plantillas premium y soporte.
-	
-	Estas empresas no venden el software —porque la licencia libre no permite prohibir su copia gratuita—, sino el servicio alrededor del software: soporte, garantías, capacitación e instalación.
+    \smallskip
+
+    \hspace*{\parindent}\textbf{• Definición}
+
+    Una licencia es un documento legal mediante el cual el autor establece qué pueden hacer otras personas con su obra.
+
+    Cuando alguien crea un software o un diseño de hardware, automáticamente adquiere derechos de autor sobre esa obra, aunque no realice ningún trámite. Esto significa que, por defecto, nadie más puede copiarla, modificarla ni distribuirla sin permiso. La licencia es justamente ese permiso: el documento donde el autor establece explícitamente qué sí y qué no se puede hacer con su obra.
+
+    Sin las licencias libres, proyectos como GNU/Linux, Arduino o Firefox no podrían existir tal como los conocemos, porque nadie tendría el derecho legal ni la posibilidad de estudiarlos, copiarlos o incluso mejorarlos.
+
+    Cabe mencionar que "libre" no es lo mismo que "gratis". Una licencia libre define permisos (usar, estudiar, modificar y compartir), no el precio. De hecho, existen empresas que cobran por soporte técnico o instalación de software libre. Por ejemplo:
+
+    \medskip
+
+    \hspace*{\parindent}\textbf{• Red Hat}
+
+    Conforma parte de IBM. Además, su sistema operativo Red Hat Enterprise Linux (RHEL) es una distribución de GNU/Linux libre; cualquiera puede descargar su código fuente de forma gratuita. Lo que Red Hat vende no es el software en sí, sino soporte técnico, actualizaciones garantizadas, certificaciones y consultoría para empresas que necesitan que alguien responda si algo falla en un sistema crítico.
+
+    \medskip
+
+    \hspace*{\parindent}\textbf{• Canonical}
+
+    Es la empresa detrás de Ubuntu (otra distribución de GNU/Linux libre). Ubuntu puede descargarse de forma gratuita, pero Canonical cobra por soporte empresarial, conocido como \textit{Ubuntu Advantage} o \textit{Ubuntu Pro}, dirigido a compañías que utilizan este sistema operativo en sus servidores.
+
+    \medskip
+
+    \hspace*{\parindent}\textbf{• Automattic}
+
+    Es la empresa detrás de WordPress, un software libre para crear páginas web distribuido bajo la licencia GPL. WordPress.org es gratuito y libre, pero Automattic obtiene ingresos mediante servicios de alojamiento (\textit{hosting}), plantillas premium y soporte técnico.
+
+    Por lo tanto, estas empresas no venden el software, porque la licencia libre no permite prohibir su copia gratuita; lo que comercializan son los servicios que lo rodean, como soporte, garantías, capacitación e instalación.
 	
 	\subsection{Licencias de software libre}
 
@@ -219,36 +235,78 @@
     \textbf{Limita:} incorpora una cláusula de represalia de patentes; si un usuario demanda a otro por una patente relacionada con el software, pierde automáticamente los derechos de patente concedidos por la licencia.
 	
 	\subsection{Licencias de hardware libre}
-	
-	Aquí está la diferencia clave con el software: lo que se protege legalmente no es un objeto físico, sino los planos, esquemas electrónicos, archivos de diseño de placa (PCB) y documentación técnica que permiten fabricarlo. El copyright cubre esos documentos, pero no siempre controla que alguien fabrique físicamente el dispositivo; por eso las licencias de hardware son legalmente más complejas que las de software.
-	
-	CERN-OHL: creada por el CERN (el laboratorio europeo de física de partículas). Es la licencia de referencia para hardware libre; permite fabricar, modificar y distribuir, exigiendo compartir las mejoras. Fue creada porque el CERN desarrollaba numerosos circuitos electrónicos y equipos científicos, y buscaba que otras instituciones pudieran utilizarlos, mejorarlos y compartirlos sin restricciones innecesarias.
-	
-	TAPR OHL: proviene de una organización estadounidense formada por radioaficionados e ingenieros electrónicos. Es también una de las primeras licencias creadas específicamente para hardware abierto, especialmente en el área de electrónica.
-	
-	Solderpad: está basada directamente en la Apache 2.0, pero adaptada a términos de hardware (por ejemplo, agrega el derecho de "fabricar", que no existe en una licencia de software).
+
+    Aquí está la diferencia clave con el software: lo que se protege legalmente no es un objeto físico, sino los planos, esquemas electrónicos, archivos de diseño de placa (PCB) y documentación técnica que permiten fabricarlo. El copyright cubre esos documentos, pero no siempre controla que alguien fabrique físicamente el dispositivo; por eso las licencias de hardware son legalmente más complejas que las de software.
+
+    \smallskip
+
+    \hspace*{\parindent}\textbf{• CERN-OHL}
+
+    Creada por el CERN (el laboratorio europeo de física de partículas). Es la licencia de referencia para hardware libre; permite fabricar, modificar y distribuir, exigiendo compartir las mejoras. Fue creada porque el CERN desarrollaba numerosos circuitos electrónicos y equipos científicos, y buscaba que otras instituciones pudieran utilizarlos, mejorarlos y compartirlos sin restricciones innecesarias.
+
+    \medskip
+
+    \hspace*{\parindent}\textbf{• TAPR OHL}
+
+    Proviene de una organización estadounidense formada por radioaficionados e ingenieros electrónicos. Es también una de las primeras licencias creadas específicamente para hardware abierto, especialmente en el área de electrónica.
+
+    \medskip
+
+    \hspace*{\parindent}\textbf{• Solderpad}
+
+    Está basada directamente en la Apache 2.0, pero adaptada a términos de hardware (por ejemplo, agrega el derecho de "fabricar", que no existe en una licencia de software).
 	
 	\section{Tecnologías y plataformas libres}
 	\subsection{Software libre más utilizado}
 
     Existen miles de programas de software libre, pero algunos destacan por su impacto en la educación, la industria y el desarrollo tecnológico.
-	
-	GNU/Linux: sistema operativo libre que sirve como base para el sistema operativo Android. Además, prácticamente todas las supercomputadoras del mundo ejecutan Linux, y la gran mayoría de los servidores que sostienen Internet utilizan este sistema operativo por su estabilidad, seguridad, personalización y alto rendimiento. Empresas como Google, Amazon, Meta y Microsoft utilizan servidores basados en Linux para muchos de sus servicios.
-	
-	LibreOffice: alternativa libre a Microsoft Office, bajo licencia MPL. Incluye programas como Writer (procesador de texto), Calc (hojas de cálculo) e Impress (presentaciones).
-	
-	Blender: software de modelado y animación 3D. La película Next Gen de Netflix (2018) se produjo usándolo, lo cual es un buen dato para mostrar que "libre" no significa "amateur". También ha sido utilizado por estudios de videojuegos, arquitectura, ingeniería y animación profesional.
-	
-	KiCad: software libre (licencia GPL) para diseñar placas electrónicas, lo cual lo conecta directamente con el hardware libre del siguiente punto. Además, muchos diseños de placas Arduino compatibles se desarrollan utilizando KiCad.
+
+    \smallskip
+
+    \hspace*{\parindent}\textbf{• GNU/Linux}
+
+    Sistema operativo libre que sirve como base para el sistema operativo Android. Además, prácticamente todas las supercomputadoras del mundo ejecutan Linux, y la gran mayoría de los servidores que sostienen Internet utilizan este sistema operativo por su estabilidad, seguridad, personalización y alto rendimiento. Empresas como Google, Amazon, Meta y Microsoft utilizan servidores basados en Linux para muchos de sus servicios.
+
+    \medskip
+
+    \hspace*{\parindent}\textbf{• LibreOffice}
+
+    Alternativa libre a Microsoft Office, bajo licencia MPL. Incluye programas como Writer (procesador de texto), Calc (hojas de cálculo) e Impress (presentaciones).
+
+    \medskip
+
+    \hspace*{\parindent}\textbf{• Blender}
+
+    Software de modelado y animación 3D. La película \textit{Next Gen} de Netflix (2018) se produjo utilizándolo, lo cual demuestra que el software libre también puede emplearse en producciones profesionales. Además, ha sido utilizado por estudios de videojuegos, arquitectura, ingeniería y animación.
+
+    \medskip
+
+    \hspace*{\parindent}\textbf{• KiCad}
+
+    Software libre (licencia GPL) para el diseño de placas electrónicas, lo que lo conecta directamente con el hardware libre. Además, muchos diseños de placas Arduino compatibles se desarrollan utilizando KiCad.
 	
 	\subsection{Hardware libre más utilizado}
 
-	Arduino: explicación en el siguiente punto.
-	
-	Raspberry Pi: es una computadora de placa única que puede utilizar como sistema operativo Raspberry Pi OS, basado en GNU/Linux. Sin embargo, su hardware no es del todo abierto en todos sus componentes: si bien promueve el uso de software libre, algunos componentes de su hardware, como el procesador Broadcom (el chip principal o SoC) y parte de su documentación técnica, son propietarios.
-	
-	RISC-V: a diferencia de los dos anteriores, no es una placa electrónica, sino una arquitectura de procesador abierta, es decir, el "plano base" de cómo funciona un chip. Cualquier empresa o universidad puede diseñar y fabricar sus propios procesadores usando ese estándar sin pagar licencia por su uso, algo que sí ocurre con arquitecturas propietarias como las de Intel x86 o ARM. Empresas como NVIDIA la utilizan.
+    Existen diversos proyectos de hardware libre que han impulsado la educación, la investigación y el desarrollo tecnológico. Entre los más representativos se encuentran los siguientes:
 
+    \smallskip
+
+    \hspace*{\parindent}\textbf{• Arduino}
+
+    Explicación en el siguiente punto.
+
+    \medskip
+
+    \hspace*{\parindent}\textbf{• Raspberry Pi}
+
+    Es una computadora de placa única que puede utilizar como sistema operativo Raspberry Pi OS, basado en GNU/Linux. Sin embargo, su hardware no es completamente abierto en todos sus componentes. Si bien promueve el uso de software libre, algunos elementos de su hardware, como el procesador Broadcom (el chip principal o SoC) y parte de su documentación técnica, son propietarios.
+
+    \medskip
+
+    \hspace*{\parindent}\textbf{• RISC-V}
+
+    A diferencia de los dos anteriores, no es una placa electrónica, sino una arquitectura de procesador abierta, es decir, el "plano base" de cómo funciona un chip. Cualquier empresa o universidad puede diseñar y fabricar sus propios procesadores utilizando este estándar sin pagar licencias por su uso, algo que sí ocurre con arquitecturas propietarias como Intel x86 o ARM. Empresas como NVIDIA la utilizan.
+	
 	\subsection{Arduino como plataforma de hardware libre}
 
 	Arduino nació en 2005 en Italia, en el Interaction Design Institute Ivrea, con el objetivo de ofrecer una plataforma electrónica basada en microcontroladores (un pequeño computador integrado en un solo chip) de bajo costo y fácil de usar para el aprendizaje de la electrónica y la programación. Uno de los problemas que buscaba resolver era el alto costo de placas como la BASIC Stamp (100 dólares). Sus placas se pintaron de azul en referencia a los ladrillos del edificio del instituto, que antes había pertenecido a la fábrica de máquinas de escribir Olivetti.
